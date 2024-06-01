@@ -1,0 +1,88 @@
+---
+import Menu from "../components/menu.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+<Layout>
+<Menu></Menu>
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #cccccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+    .car-image {
+        text-align: center;
+    }
+    .car-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .car-details {
+        margin-top: 20px;
+    }
+    .car-details h2 {
+        color: #333;
+    }
+    .car-details p {
+        color: #666;
+        line-height: 1.6;
+    }
+    .specs {
+        margin-top: 20px;
+    }
+    .specs h3 {
+        color: #333;
+    }
+    .specs ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .specs ul li {
+        background: #f9f9f9;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="car-image"> 
+        <h1>Toyota Fortuner 2024</h1>
+        <img src="https://autosdeprimera.com/wp-content/uploads/2022/06/toyota-gazoo-racing-colombia-e.jpg" 
+        alt="Imagen del Carro">
+    </div>
+    <div class="car-details">
+       
+        <p>
+            La Toyota Fortuner 2024 es una SUV robusta y confiable que combina un diseño imponente con un rendimiento excepcional en carretera y todoterreno. Con capacidad para siete pasajeros, ofrece un amplio espacio interior y comodidad en cada viaje. Equipada con tecnología de vanguardia y características de seguridad avanzadas, la Fortuner brinda tranquilidad y conveniencia a los conductores y sus familias. Ya sea en la ciudad o en aventuras fuera de la carretera, la Toyota Fortuner 2024 demuestra su versatilidad y durabilidad, destacándose como una opción líder en su segmento.</p>
+    </div>
+    <div class="specs">
+        <h3>Especificaciones</h3>
+        <ul>
+            <li><strong>Marca:</strong> Toyota</li>
+            <li><strong>Año de Fabricación:</strong> 2024</li>
+            <li><strong>Motor:</strong> Diesel 2,4L</li>
+            <li><strong>Color:</strong> Negro Perlado</li>
+            <li><strong>Transmisión:</strong> Doble orquilla con resortes Helicoidales</li>
+            <li><strong>Precio:</strong> 250,800,000.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+</Layout>

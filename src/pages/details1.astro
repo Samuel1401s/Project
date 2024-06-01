@@ -1,0 +1,90 @@
+---
+import Menu from "../components/menu.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+<Layout>
+    <Menu></Menu>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #cccccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            border-radius: 10px;
+            
+        }
+        .car-image {
+            text-align: center;
+        }
+        .car-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .car-details {
+            margin-top: 20px;
+        }
+        .car-details h2 {
+            color: #333;
+        }
+        .car-details p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .specs {
+            margin-top: 20px;
+            back
+        }
+        .specs h3 {
+            color: #333;
+        }
+        .specs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specs ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="car-image">
+            <h1>BMW iX 2025</h1>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/2023-bmw-ix-m60-108-1653422436.jpg?crop=0.728xw:0.820xh;0.160xw,0.0264xh&resize=768:*" alt="Imagen del Carro">
+        </div>
+        <div class="car-details">
+        
+            
+            <p>Nacido de una visión. Creado para la movilidad eléctrica. La BMW iX alcanza, gracias a la eficiente tecnología BMW eDrive y a su tracción a las cuatro ruedas completamente eléctrica, una autonomía extraordinaria y una aceleración impresionante desde parado. El inteligente BMW Operating System 8 se mantiene actualizado en todo momento y ofrece un uso completamente intuitivo.</p>
+        </div>
+        <div class="specs">
+            <h3>Especificaciones</h3>
+            <ul>
+                <li><strong>Marca:</strong> BMW</li>
+                <li><strong>Año de fabricacion:</strong> 2024</li>
+                <li><strong>Color:</strong> Gris Plateado</li>
+                <li><strong>Precio:</strong> 359.920.000 </li>
+                <li><strong>Tipo de motor:</strong> Electrico</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</Layout>

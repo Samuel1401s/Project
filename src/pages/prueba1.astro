@@ -1,0 +1,120 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Carro</title>
+    <style>
+        .catalog{
+            background-color: rgb(20, 18, 18);
+            padding: 20px;
+            text-align: center;
+            height: auto;
+            width: 20px;
+            
+        
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .car-details {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            margin:0%
+        }
+
+        .car-details img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .boton2 {
+            height: 40px;
+    
+            color: white;
+            background-color: rgb(6, 136, 153);
+            position: center;
+            padding: 20px;
+            margin-left: 50px;
+            margin-top: 10px;
+            text-align: center;
+            height: 10px;
+            line-height: 10px;
+            text-align: justify;
+            
+        }
+
+        
+    </style>
+    
+
+</head>
+<div class="catalog"><p>hola</p></div>
+
+
+<body>
+    <header>
+        <h1>Detalles del Carro</h1>
+    </header>
+    <a href="/"><button class="boton2"> Volver</button></a>
+    <main>
+        <div class="car-details" id="carDetails">
+            <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2021/02/20210208-TOP-75-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-ENERO-2021-01.jpg" alt="Carro">
+            <h2 id="carName"></h2>
+            <p id="carDescription"></p>
+            <p id="carPrice"></p>
+        </div>
+    </main>
+    
+    
+
+    <script>
+        // Datos del carro (esto podría venir de una base de datos o una API)
+        const carData = {
+            name: "Carro 1",
+            image: "https://www.elcarrocolombiano.com/wp-content/uploads/2021/02/20210208-TOP-75-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-ENERO-2021-01.jpg",
+            description: "Descripción del Carro 1.",
+            price: "100.000"
+        };
+
+        // Función para cargar los detalles del carro en la página
+        function loadCarDetails() {
+            const carDetailsContainer = document.getElementById("carDetails");
+            const carNameElement = document.getElementById("carName");
+            const carDescriptionElement = document.getElementById("carDescription");
+            const carPriceElement = document.getElementById("carPrice");
+            const carImageElement = document.querySelector(".car-details img");
+
+            carNameElement.textContent = carData.name;
+            carDescriptionElement.textContent = carData.description;
+            carPriceElement.textContent = "Precio: " + carData.price;
+           
+        }
+
+        // Cargar los detalles del carro cuando la página se carga completamente
+        window.onload = loadCarDetails;
+    </script>
+     
+    
+
+
+    </div>
+</body>
+</html>

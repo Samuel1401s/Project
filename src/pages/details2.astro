@@ -1,0 +1,82 @@
+---
+import Menu from "../components/menu.astro";
+import Layout from "../layouts/Layout.astro";
+---
+<Layout>
+    <Menu></Menu>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #cccccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+        .car-image {
+            text-align: center;
+        }
+        .car-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .car-details {
+            margin-top: 20px;
+        }
+        .car-details h2 {
+            color: #333;
+        }
+        .car-details p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .specs {
+            margin-top: 20px;
+        }
+        .specs h3 {
+            color: #333;
+        }
+        .specs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specs ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body> 
+    
+    <div class="container">
+        <div class="car-image">
+            <h1>FERRARI SF90</h1>
+            <img src="https://cdn.motor1.com/images/mgl/B7Aow/s1/novitec-ferrari-sf90-stradale.webp" 
+            alt="Imagen del Carro">
+        </div>
+        <div class="car-details">
+           
+            <p>El nombre del automóvil sintetiza el verdadero significado de todo lo que se ha logrado en términos de prestaciones. La referencia al 90 aniversario de la creación de la Scuderia Ferrari subraya el fuerte vínculo que siempre ha existido entre circuito y carretera en todos los Ferrari. Además de toda una brillante apuesta por las tecnologías más avanzadas desarrolladas en Maranello, el SF90 Stradale  es también la demostración perfecta de cómo Ferrari traslada inmediatamente a todos sus coches el conocimiento y las habilidades que adquiere en la competición.</p>
+        </div>
+        <div class="specs">
+            <h3>Especificaciones</h3>
+            <ul>
+            <li><strong>Marca:</strong> Ferrari</li>
+            <li><strong>Año de Fabricación:</strong> 2019</li>
+            <li><strong>Motor:</strong> Hibrido</li>
+            <li><strong>Color:</strong> Negro Metalico</li>
+            <li><strong>Transmisión:</strong> Doble embrague de 8 velocidades</li>
+            <li><strong>Precio:</strong> 3,462,840,000</li>
+            </ul>
+        </div>
+    </div>
+</Layout>
