@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="producto">
+      <img src="imagen.jpg" alt="Producto">
+      <div class="detalle">
+        <h2>Producto 1</h2>
+        <p>Descripción del producto.</p>
+        <p id="precio">Precio: $2834</p>
+        <button id="sumarBtn">Sumar 30</button>
+        <button id="restarBtn">Restar 30</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    
+    function sumar() {
+      var precioActual = document.getElementById("precio");
+      var precio = parseInt(precioActual.innerText.split("$")[1]);
+      var total = precio + 30;
+      precioActual.innerText = "Precio: $" + total;
+    }
+  
+
+    function restar() {
+      var precioActual = document.getElementById("precio");
+      var precio = parseInt(precioActual.innerText.split("$")[1]);
+      var total = precio - 30;
+      precioActual.innerText = "Precio: $" + total;
+    }
+  
+    document.getElementById("sumarBtn").addEventListener("click", sumar);
+    document.getElementById("restarBtn").addEventListener("click", restar);
+  </script>
+
