@@ -2,9 +2,16 @@
 import Menu from "../components/menu.astro";
 import Layout from "../layouts/Layout.astro";
 ---
-
+<link rel="Layout.astro" href="Layout.astro">
 <Layout>
 	<Menu />
+
+	<div>
+		<div class="header"></div>
+	</div>
+	
+		
+	</div>
 
 	<div class="box1">
 		<h1>!Autos Con 20% de descuento hoy¡</h1>
@@ -12,15 +19,14 @@ import Layout from "../layouts/Layout.astro";
 
 	<main>
 		<section>
-			
 			<div class="car-list">
 				<div class="car">
-					 <img
+					<img
 						src="https://hips.hearstapps.com/hmg-prod/images/2023-bmw-ix-m60-108-1653422436.jpg?crop=0.728xw:0.820xh;0.160xw,0.0264xh&resize=768:*"
-						alt="BMW iX 2025"/>
-					 
-					
-					 <h3>BMW iX 2025</h3>
+						alt="BMW iX 2025"
+					/>
+
+					<h3>BMW iX 2025</h3>
 					<p class="letter1">Precio Antes:449.900.000</p>
 
 					<p class="letter2">Precio Ahora: 359.920.000</p>
@@ -28,11 +34,10 @@ import Layout from "../layouts/Layout.astro";
 					<div class="boton1">
 						<div onclick="boton1">
 							<a href="/details1"><button>Ver mas</button></a>
-							
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="car-list">
 					<div class="car">
 						<img
@@ -41,7 +46,7 @@ import Layout from "../layouts/Layout.astro";
 						/>
 						<h3>Bugatti Chiron</h3>
 						<p class="letter1">Precio antes: 11,000,000,000</p>
-						<p class="letter2">Precio Ahora: 8,800,000,000 </p>
+						<p class="letter2">Precio Ahora: 8,800,000,000</p>
 
 						<a href="/details5"> <button>Ver mas</button></a>
 					</div>
@@ -65,18 +70,16 @@ import Layout from "../layouts/Layout.astro";
 					</div>
 				</div>
 			</div>
-			
 		</section>
 		<section>
-			
 			<div class="car-list">
 				<div class="car">
-					 <img
+					<img
 						src="https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXABuN9dMGF4tl3U0%25z8rMHIspbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmWBisGK7Zlp0KtYYF%25mVSW8uAVbsqYSJQP0iO5M56hHcTCkKzdKf2GLZB9SPQrItywRuT0kN%25x7e2HLec1UBXCfHaYXZaiUFVcIrh0Qw9sJRzPf7KXL"
-						alt="Porshe 911 Turbo S"/>
-					 
-					
-					 <h3>Porshe 911 Turbo S</h3>
+						alt="Porshe 911 Turbo S"
+					/>
+
+					<h3>Porshe 911 Turbo S</h3>
 					<p class="letter1">Precio Antes:903,000,000</p>
 
 					<p class="letter2">Precio Ahora: 722,400,000</p>
@@ -84,11 +87,10 @@ import Layout from "../layouts/Layout.astro";
 					<div class="boton1">
 						<div onclick="boton1">
 							<a href="/details4"><button>Ver mas</button></a>
-							
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="car-list">
 					<div class="car">
 						<img
@@ -105,6 +107,7 @@ import Layout from "../layouts/Layout.astro";
 				<div class="car-list">
 					<div class="car">
 						<img
+							class="imagen"
 							src="https://hips.hearstapps.com/hmg-prod/images/lamborghini-aventador-lp-780-4-ultimae-1-1625667550.jpg?crop=0.777xw:0.691xh;0.0856xw,0.171xh&resize=2048:*"
 							alt="Toyota Fortuner 2024"
 						/>
@@ -121,8 +124,8 @@ import Layout from "../layouts/Layout.astro";
 					</div>
 				</div>
 			</div>aa
-			
 		</section>
 		<a href="/prueba1">aaaaaaaaaaaaaa</a>
+		<a href="/prueba2">eeeeeeeeeeeeeeee</a>
 	</main>
 </Layout>

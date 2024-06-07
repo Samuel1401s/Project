@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel's Shop</title>
-    
-</head>
-<body>
-    <slot/>
-
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Samuel's Shop</title>
+    </head>
+    <body>
+        <slot />
+    </body>
 </html>
 <style is:global>
-    button{
+    button {
         cursor: pointer;
     }
     body {
@@ -22,11 +20,14 @@
     }
 
     header {
-        background-color: #333;
-        color: #fff;
+        
+        color: #000000;
         padding: 20px;
         text-align: center;
+        position: relative;
+        z-index: 1;
     }
+         
 
     nav ul {
         list-style-type: none;
@@ -76,44 +77,51 @@
 
     .box1 {
         height: 75px;
-        background-color: rgb(36, 165, 42);
+        background-color: rgb(58, 187, 18);
         text-align: center;
         padding: 3px;
-
     }
-    .letter1{
+    .letter1 {
         color: white;
         background-color: rgb(150, 2, 2);
         padding: 4px;
         height: auto;
         width: 153px;
     }
-    .letter2{
+    .letter2 {
         color: white;
         background-color: rgb(9, 187, 9);
         padding: 4px;
         height: auto;
         width: 153px;
     }
-    
-    .button1{
-     background-color: #3483fa;;
-     color:  white;
-     width: 120px;
-     height: 35px;
-     border: 0;
-     align-items: center;
-     border-radius: 8px;
-     box-shadow: 0 0 10px rgb(0, 0, 0);
-     
-    
-     }
-    
-    .button:hover{
+
+    .button1 {
+        background-color: #3483fa;
+        color: white;
+        width: 120px;
+        height: 35px;
+        border: 0;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+
+    .button:hover {
         background-color: rgb(13, 168, 13);
     }
+
+    .imagen {
+        background-image: url(https://www.race.es/revista-autoclub/wp-content/uploads/sites/4/2016/09/logotiposcoches-759x500.jpg);
+
+        z-index: 2;
+        top: 0;
+        position: relative;
+        opacity: 0.5;
+        
+        
+        width: 100%;
+
+        
+    }
 </style>
-
-
- 
-
