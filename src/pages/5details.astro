@@ -2,106 +2,120 @@
 import Menu from "../components/menu.astro";
 import Layout from "../layouts/Layout.astro";
 ---
-<link
+<!-- Este es el primer carro de la pag 2 -->
+<html lang="es">
+ <Layout> 
+    <Menu></Menu>
+<head>
+  <meta charset="UTF-8">
+  
+  <title> Aston Martin DB11</title>
+  <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
-/>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-<Layout>
-    <Menu></Menu>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #cccccc;
-            padding: 20px;
-            box-shadow: 0 0 10px rgb(0, 0, 0);
-            border-radius: 10px;
-            }
-        .car-image {
-            text-align: center;
-        }
-        .car-image img {
-            max-width: 100%;
-            height: auto;
-        }
-        .car-details {
-            margin-top: 20px;
-        }
-        .car-details h2 {
-            color: #333;
-        }
-        .car-details p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .specs {
-            margin-top: 20px;
-            back
-        }
-        .specs h3 {
-            color: #333;
-        }
-        .specs ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .specs ul li {
-            background: #f9f9f9;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
+  />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 3em;
+      color: #333;
+    }
+    .car-image img {
+      height: 700px;
+      height: auto;
+      border-radius: 10px;
+      width: 900px;
+
+    }
+    .car-details {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .car-details h2 {
+      color: #333;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .car-details p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .specs {
+      margin-top: 20px;
+    }
+    .specs h3 {
+      color: #333;
+      font-size: 1.5em;
+    }
+    .specs ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .specs ul li {
+      background: #f9f9f9;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="car-image">
-            <h1>BMW iX 2025</h1>
-            <img src="https://hips.hearstapps.com/hmg-prod/images/2023-bmw-ix-m60-108-1653422436.jpg?crop=0.728xw:0.820xh;0.160xw,0.0264xh&resize=768:*" alt="Imagen del Carro">
-        </div>
-        <div class="car-details">
-        
-            
-            <p>Nacido de una visión. Creado para la movilidad eléctrica. La BMW iX alcanza, gracias a la eficiente tecnología BMW eDrive y a su tracción a las cuatro ruedas completamente eléctrica, una autonomía extraordinaria y una aceleración impresionante desde parado. El inteligente BMW Operating System 8 se mantiene actualizado en todo momento y ofrece un uso completamente intuitivo.</p>
-        </div>
-        <div class="specs">
-            <h3>Especificaciones</h3>
-            <ul>
-                <li><strong>Marca:</strong> BMW</li>
-                <li><strong>Año de fabricacion:</strong> 2024</li>
-                <li><strong>Color:</strong> Gris Plateado</li>
-                <li><strong>Precio:</strong> 359.920.000 </li>
-                <li><strong>Tipo de motor:</strong> Electrico</li>
-                <br>
-                <a href="/"> <button class="button1 " >Agrega al Carrito</button></a>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="header">
+      <h1 class="marc">Ferrari 488 GTB</h1>
     </div>
+    <div class="car-image">
+      <img src="https://i.pinimg.com/originals/5b/89/a1/5b89a18d91c52a3b5e8e5027311053b7.jpg" alt="Aston Martin DB11">
+    </div>
+    <div class="car-details">
+      <h2>Descripción</h2>
+      <p>El Ferrari 488 GTB redefine el significado de la velocidad y el lujo. Con un motor V8 Biturbo que ofrece un rendimiento sin igual, este superdeportivo italiano te lleva a una experiencia de conducción inolvidable. Con su diseño aerodinámico y su elegancia atemporal, el 488 GTB es la personificación de la pasión y la excelencia de Ferrari.</p>
+      <div class="specs">
+        <h3>Especificaciones</h3>
+        <ul>
+          <li><strong>Marca:</strong> Ferrari</li>
+          <li><strong>Año de Fabricación:</strong> Varias versiones desde 2015</li>
+          <li><strong>Color:</strong> Negro</li>
+          <li><strong>Precio:</strong> 1,045,000,000 </li>
+          <li><strong>Tipo de Motor:</strong> V8 Biturbo</li>
+          <li><strong>Velocidad Máxima:</strong> 330 km/h</li>
+          <li><strong>Aceleración (0-100 km/h):</strong> Alrededor de 3 segundos</li>
+        </ul>
+      </div>
+      <div class="more-images">
+        <h3>Otras Presentaciones</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://cdn.ferrari.com/cms/network/media/img/resize/5ea7ee31987ea872f1afb1b4-50_ferrrair-308_gts_488_gtb_esterni?width=750&height=550" alt="Interior del Aston Martin DB11" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+            <img src="https://cdn.ferrari.com/cms/network/media/img/resize/5ea7f088987ea872f1afb270-56_ferrari-360_barchetta_488_gtb_esterni?width=750&height=550" alt="Parte Trasera del Aston Martin DB11" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+            <img src="https://cdn.ferrari.com/cms/network/media/img/resize/5ea7f8d0f5a8157b920c9de0-63_ferrari-fxx_pacchettoevoluzione_488_gtb_esterni?width=750&height=550" alt="Vista Lateral del Aston Martin DB11" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 
-
-
-
-
-
-
-</Layout>
+</Layout>  

@@ -1,123 +1,124 @@
 ---
-
 import Menu from "../components/menu.astro";
 import Layout from "../layouts/Layout.astro";
 ---
-<link
+<!-- Este es el primer carro de la pag 2 -->
+<html lang="es">
+ <Layout> 
+    <Menu></Menu>
+<head>
+  <meta charset="UTF-8">
+  
+  <title> Aston Martin DB11</title>
+  <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
-/>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-<Layout>
-    <Menu>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                max-width: 800px;
-                margin: 20px auto;
-                background-color: #cccccc;
-                padding: 20px;
-                box-shadow: 0 0 10px rgb(0, 0, 0);
-                border-radius: 10px;
-                }
-            .car-image {
-                text-align: center;
-            }
-            .car-image img {
-                max-width: 100%;
-                height: auto;
-            }
-            .car-details {
-                margin-top: 20px;
-            }
-            .car-details h2 {
-                color: #333;
-            }
-            .car-details p {
-                color: #666;
-                line-height: 1.6;
-            }
-            .specs {
-                margin-top: 20px;
-                back
-            }
-            .specs h3 {
-                color: #333;
-            }
-            .specs ul {
-                list-style-type: none;
-                padding: 0;
-            }
-            .specs ul li {
-                background: #f9f9f9;
-                margin: 5px 0;
-                padding: 10px;
-                border-radius: 5px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="car-image">
-                <h1>Ferrari 488 GTB</h1>
-                <img src="https://hips.hearstapps.com/es.h-cdn.co/cades/contenidos/14785/ferrari488gtb1.jpg" 
-                alt="Imagen del Carro">
-            </div>
-            <div class="car-details">
-            
-                
-                <p>El Ferrari 488 GTB es una obra maestra de la ingeniería y el diseño italiano que encarna la esencia del lujo deportivo. Con su elegante silueta y líneas aerodinámicas, este superdeportivo impresiona tanto en la carretera como en la pista. Equipado con un motor V8 biturbo que produce una potencia impresionante, el 488 GTB ofrece un rendimiento excepcional y una experiencia de conducción emocionante. Su interior lujoso y lleno de tecnología brinda comodidad y conveniencia, mientras que su legado en el mundo del automovilismo lo convierte en un ícono de la pasión por los automóviles. El Ferrari 488 GTB es mucho más que un simple automóvil: es una obra de arte sobre ruedas que cautiva a todos los que tienen el privilegio de experimentarlo.</p>
-            </div>
-            <div class="specs">
-                <h3>Especificaciones</h3>
-                <ul>
-                    <li><strong>Marca:</strong> Ferrari</li>
-                    <li><strong>Año de fabricacion:</strong> 2019</li>
-                    <li><strong>Color:</strong> Rojo Fuego</li>
-                    <li><strong>Precio:</strong>  1,214,996,000 </li>
-                    <li><strong>Tipo de motor:</strong> Gasolina</li>
-                    <li><strong>Velocidad Maxima:</strong> 330 km/h</li>
-                    <br>
-                 <a href="/"> <button class="button1 " >Compra Ahora</button></a>
-                    
-                    
+  />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 3em;
+      color: #333;
+    }
+    .car-image img {
+      height: 700px;
+      height: auto;
+      border-radius: 10px;
+      width: 900px;
 
-                </ul>
-            </div>
+    }
+    .car-details {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .car-details h2 {
+      color: #333;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .car-details p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .specs {
+      margin-top: 20px;
+    }
+    .specs h3 {
+      color: #333;
+      font-size: 1.5em;
+    }
+    .specs ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .specs ul li {
+      background: #f9f9f9;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="marc">Aston Martin DB11</h1>
+    </div>
+    <div class="car-image">
+      <img src="https://www.diariomotor.com/imagenes/2016/03/aston-martin-db11-carretera-407557.jpg" alt="Aston Martin DB11">
+    </div>
+    <div class="car-details">
+      <h2>Descripción</h2>
+      <p>El Aston Martin DB11 combina elegancia y potencia en un diseño sofisticado y aerodinámico. Con un motor V12 biturbo y una ingeniería de precisión, este automóvil ofrece una experiencia de conducción inigualable.</p>
+      <div class="specs">
+        <h3>Especificaciones</h3>
+        <ul>
+          <li><strong>Marca:</strong> Aston Martin</li>
+          <li><strong>Año de Fabricación:</strong> 2023</li>
+          <li><strong>Color:</strong> Gris Plateado</li>
+          <li><strong>Precio:</strong> 836,000,000</li>
+          <li><strong>Tipo de Motor:</strong> V12 Biturbo</li>
+          <li><strong>Velocidad Máxima:</strong> 322 km/h</li>
+          <li><strong>Aceleración (0-100 km/h):</strong> 3.9 segundos</li>
+        </ul>
+      </div>
+      <div class="more-images">
+        <h3>Otras Presentaciones</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://cdn.motor1.com/images/mgl/NROq2/s3/2020-aston-martin-db11.jpg" alt="Interior del Aston Martin DB11" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+            <img src="https://assets.whichcar.com.au/image/upload/s--ARc6cv9X--/c_fill,f_auto,q_auto:good/t_p_16x9/v1/archive/whichcar/2018/07/06/-1/Aston-Martin-DB11-Volante-Henley-Royal-Regatta.jpg" alt="Parte Trasera del Aston Martin DB11" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+            <img src="https://cdn.motor1.com/images/mgl/kp6LP/s1/2022-aston-martin-db11.jpg" alt="Vista Lateral del Aston Martin DB11" class="img-fluid">
+          </div>
         </div>
-    
-    
-    
-    
-    
-    
-    
-    </Layout>
+      </div>
+    </div>
+  </div>
+</body>
 
-
-
-
-
-
-
+</Layout>  
 
 
 
