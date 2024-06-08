@@ -1,20 +1,24 @@
 <div class="">
-    <div class="imagen">
-        <header>
-            <div class="name"><h1 class="name">Samuel's Shop</h1></div>
-            <nav>
-                <ul>
-                    <li><strong><a href="/">Inicio</a></strong></li>
-                    <li><strong><a href="/page2">Catálogo</a></strong></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    
+        
+   
+    <header>
+        <div class="imagen"></div>
+        <div class="name"><h1 class="name">Samuel's Shop</h1></div>
+        <nav>
+            <ul>
+                <li><strong><a href="/">Inicio</a></strong></li>
+                <li><strong><a href="/page2">Catálogo</a></strong></li>
+            </ul>
+        </nav>
+    </header>
 </div>
 
 <style>
     .name {
         font-size: 40px;
+        z-index: 2;
+        position: relative;
         
         
     }
@@ -22,6 +26,8 @@
         list-style-type: none;
         padding: 0;
         font-size: 24px;
+        z-index: 2;
+        position: relative;
     }
 
     nav ul li {
@@ -35,9 +41,11 @@
     }
     .imagen {
         background-image: url(https://www.race.es/revista-autoclub/wp-content/uploads/sites/4/2016/09/logotiposcoches-759x500.jpg);
-        z-index: 2;
+        z-index: 1;
         top: 0;
-        position: relative;
+        position: absolute;
+        height: 190px;
+        opacity: 0.5;
         
         width: 100%;
         
