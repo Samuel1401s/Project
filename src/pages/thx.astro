@@ -1,0 +1,51 @@
+---
+import Menu from "../components/menu.astro";
+import Layout from "../layouts/Layout.astro";
+---
+<Layout>
+    <header class="q">
+    <Menu></Menu></header>
+<head>
+    
+    
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0px ;
+            padding: 0px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 6px;
+            background-color: #0ea8b3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0px 100px 0px 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #302e2e;
+            margin-top: 20px;
+        }
+        .q{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <strong><h1>¡Muchas gracias por tu compra!</h1></strong>
+        <strong><p>Nos pondremos en contacto contigo tan pronto como tu producto llegue.</p></strong>
+    </div>
+</body>
+</Layout>
